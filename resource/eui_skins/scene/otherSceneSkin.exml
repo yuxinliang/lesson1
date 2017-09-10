@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="otherSceneSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image source="bg2_jpg"/>
+	<e:Label id="title" text="Label" y="46" horizontalCenter="0"/>
+	<e:Button id="btn" label="home" x="510" y="1060"/>
+</e:Skin>

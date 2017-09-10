@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="popSceneSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image source="bg2_jpg" width="300" height="400" x="172" y="124"/>
+	<e:Label id="title" text="Label" y="150" horizontalCenter="17"/>
+	<e:Button id="btn" label="goback" x="186" y="455"/>
+</e:Skin>
