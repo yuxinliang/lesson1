@@ -23,4 +23,15 @@ class homeScene_view extends mvc.view{
 	private btn:eui.Button;
 	private popBtn:eui.Button;
 	private updataBtn:eui.Button;
+
+
+	private addPopComment(){
+	}
+	private removeComment(){
+	}
+}
+class popNoData extends eui.Component{
+	public constructor() {
+		super();
+	}
 }
