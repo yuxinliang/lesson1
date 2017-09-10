@@ -16,6 +16,13 @@ var mvc;
         };
         model.prototype.create = function () {
         };
+        model.prototype.getRequestData = function (data, callback) {
+            var self = this;
+            mySocket.requestData(data, function (redata) {
+                self._data = redata;
+                callback(redata);
+            });
+        };
         model.prototype.release = function () {
         };
         return model;

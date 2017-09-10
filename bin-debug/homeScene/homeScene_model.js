@@ -11,6 +11,9 @@ var homeScene_model = (function (_super) {
     function homeScene_model() {
         return _super.call(this) || this;
     }
+    homeScene_model.prototype.updataName = function (str, callback) {
+        callback(str + "updata");
+    };
     return homeScene_model;
 }(mvc.model));
 __reflect(homeScene_model.prototype, "homeScene_model");

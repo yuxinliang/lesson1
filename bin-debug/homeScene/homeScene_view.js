@@ -22,6 +22,12 @@ var homeScene_view = (function (_super) {
         this.popBtn.addEventListener(egret.TouchEvent.TOUCH_TAP, function (e) {
             self._control.eventHandler("popScene");
         }, this);
+        this.updataBtn.addEventListener(egret.TouchEvent.TOUCH_TAP, function (e) {
+            self._control.eventHandler("updataScene");
+        }, this);
+    };
+    homeScene_view.prototype.updataTitle = function (str) {
+        this.title.text = str;
     };
     return homeScene_view;
 }(mvc.view));

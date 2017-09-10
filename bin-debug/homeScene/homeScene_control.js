@@ -12,6 +12,7 @@ var homeScene_control = (function (_super) {
         return _super.call(this) || this;
     }
     homeScene_control.prototype.eventHandler = function (msg) {
+        var _this = this;
         switch (msg) {
             case "changeScene": {
                 mvc.gameManager.getInstance().changeScene("otherScene");
@@ -19,6 +20,12 @@ var homeScene_control = (function (_super) {
             }
             case "popScene": {
                 mvc.gameManager.getInstance().open("popScene");
+                break;
+            }
+            case "updataScene": {
+                this._model.updataName("homeScene", function (str) {
+                    _this._view.updataTitle(str);
+                });
                 break;
             }
         }
